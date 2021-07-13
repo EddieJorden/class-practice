@@ -1,18 +1,22 @@
 class Person {
-	constructor(name, mood, race) {
+	constructor(name, mood, race, height) {
 		this.name = name;
 		this.mood = mood;
 		this.race = race;
+		this.height = height;
 	}
 	introduce() {
-		console.log('hi my name is ' + this.name + ' and I am ' + this.race);
+		console.log(
+			'hi my name is ' +
+				this.name +
+				' I am ' +
+				this.race +
+				' I am ' +
+				this.height
+		);
 	}
 }
 
-const johnny = new Person('Johnny', 'happy', 'arian');
-console.log(johnny);
-johnny.introduce();
-
-const joolie = new Person('Joolie', 'great', 'russian');
+const joolie = new Person('Joolie', 'great', 'russian', '5ft 3in');
 console.log(joolie);
 joolie.introduce();
